@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>carpe diem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="introPrompt">
+    <div class="prompt-box">
+      <p>a lua está linda hoje.
+
+</p>
+      
+      <div class="buttons">
+        <button id="continueBtn">Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/indelével.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <div id="text"></div>
+  </div>
+
+  <div id="icon" onclick="openImage()">⋯</div>
+  <span id="serendipia">serendipia (s.f)</span>
+  
+
+  <div id="modal" class="modal" onclick="closeImage()">
+    <video class="modal-content" controls onclick="event.stopPropagation()">
+      <source src="assets/a lua está linda hoje.MOV" type="video/mp4">
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
